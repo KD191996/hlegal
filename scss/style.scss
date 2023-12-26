@@ -195,6 +195,9 @@ html {
     bottom: 0px;
     width: calc(100% - 1rem);
   }
+  .item-3.active {
+    transition: all 0.7s linear;
+  }
   .item-3 li {
     background-color: $Grey-Bg;
     border-radius: 12px;

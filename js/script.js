@@ -16,3 +16,9 @@ $('.nav-wrap').click(function (event) {
 $('.close').click(function () {
     $('.nav-wrap').removeClass('active')
 })
+
+
+
+$('.menu-item').click(function () {
+    $(this).addClass('active');
+})
