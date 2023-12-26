@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $Grey-Bg;
+  &-right {
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+  }
+  &-adress {
+    color: $Main-Regular;
+  }
+  &-map {
+    color: $Active-Regular;
+    @include font-styles(12px, 700, normal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  &-tel {
+    color: #46466e;
+    font-weight: 700;
+  }
+  &-mail {
+    color: $Active-Regular;
+    font-weight: 700;
+  }
+}
+.adress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social {
+  &-map {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.copy {
+  color: $Grey-Text;
+}
+.footer-facebook :hover {
+  fill: $Accent;
+}
+.footer-mail:hover {
+  color: $Accent;
+}

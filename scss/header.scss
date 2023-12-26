@@ -1,0 +1,116 @@
+.span-logo {
+  color: $Main-Regular;
+  @include font-styles(36px, 400, normal);
+}
+.header {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    'a b'
+    'a c';
+  .item-1 {
+    grid-area: a;
+    align-self: center;
+    display: flex;
+  }
+  .item-2 {
+    grid-area: b;
+    display: flex;
+    gap: 6px;
+    justify-content: end;
+    align-items: center;
+  }
+  .item-3 {
+    grid-area: c;
+    justify-content: end;
+    display: flex;
+    gap: 15px;
+  }
+  .adress {
+    color: $Grey-Text;
+    text-align: right;
+    line-height: normal;
+  }
+  .tel {
+    @extend .adress;
+    font-weight: 700;
+  }
+}
+.lang-list {
+  color: $Grey-Text;
+  text-align: center;
+  @include font-styles(12px, 700, normal);
+  letter-spacing: 1px;
+}
+.lang-list input[type='radio'] {
+  display: none;
+}
+
+.lang-list input[type='radio']:checked + span {
+  border-radius: 8px;
+  background-color: #f0145a;
+  padding: 5px 7px;
+  color: #fff;
+}
+
+.lang-list span {
+  padding: 5px 7px;
+}
+
+.lang-list span:hover {
+  border-radius: 8px;
+  background: #f5f5fa;
+  padding: 5px 7px;
+}
+
+.facebook :hover {
+  fill: $Accent;
+}
+.menu-item {
+  color: $Active-Regular;
+  text-align: right;
+  font-weight: 700;
+}
+.item-3 a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #24a3ff;
+}
+
+.item-3 a {
+  position: relative;
+}
+
+.item-3 a:hover:before {
+  width: 100%;
+}
+.item-3 a:active {
+  color: $Accent;
+}
+.item-3 a:active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: $Accent;
+}
+.item-3 a:active:before {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+}
+.item-3 ul {
+  text-decoration: none;
+}
+.item-3 li {
+  text-decoration: none;
+  list-style: none;
+}

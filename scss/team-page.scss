@@ -1,0 +1,51 @@
+.main-title {
+  @include font-styles(38px, 700, normal);
+  background: $Gradient-Red-Text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.team-foto {
+  border-radius: 12px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.card {
+  &-name {
+    color: $Main-Regular;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+  }
+
+  &-descript {
+    color: $Grey-Text;
+    @include font-styles(14px, 400, 1.57);
+  }
+
+  &-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  &-absolute {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+  }
+}
+.relative {
+  position: relative;
+}
+
+.card-item:hover h2 {
+  color: #f0145a;
+  cursor: pointer;
+}
+.card-item:hover #styled-element {
+  stroke: #f0145a;
+}

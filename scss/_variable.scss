@@ -1,0 +1,13 @@
+$Main-Regular: #323264;
+$Gradient-Red-Text: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
+$Accent: #f0145a;
+$Basic-White: #fff;
+$Grey-Text: #b3b3ba;
+$Grey-Bg: #f5f5fa;
+$Active-Regular: #24a3ff;
+
+@mixin font-styles($fz, $fw, $lh) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+}
