@@ -75,46 +75,10 @@
 .menu-item:hover {
   border-bottom: 2px solid;
 }
-.menu-item.active {
+.active {
   color: #f0145a;
   border-bottom: 2px solid;
 }
-// .item-3 a::before {
-//   content: '';
-//   position: absolute;
-//   left: 0;
-//   bottom: -3px;
-//   width: 0;
-//   height: 2px;
-//   background-color: #24a3ff;
-// }
-
-// .item-3 a {
-//   position: relative;
-// }
-
-// .item-3 a:hover:before {
-//   width: 100%;
-// }
-// .item-3 a:active {
-//   color: $Accent;
-// }
-// .menu-item .active {
-//   color: $Accent;
-// }
-
-// .item-3 a:active:before {
-//   content: '';
-//   position: absolute;
-//   left: 0;
-//   bottom: -3px;
-//   width: 0;
-//   height: 2px;
-//   background-color: $Accent;
-// }
-// .item-3 a:active:before {
-//   width: 100%;
-// }
 
 .burger {
   display: none;

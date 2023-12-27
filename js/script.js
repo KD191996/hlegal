@@ -19,6 +19,3 @@ $('.close').click(function () {
 
 
 
-$('.menu-item').click(function () {
-    $(this).addClass('active');
-})

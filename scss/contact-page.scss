@@ -1,0 +1,31 @@
+.gap-60 {
+  gap: 60px;
+}
+.contact {
+  &-wrap {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  &-adress {
+    font-size: 21px;
+    line-height: 1.4;
+    color: $Main-Regular;
+  }
+  &-tel {
+    color: #46466e;
+    @extend .contact-adress;
+    margin-bottom: 15px;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.horizont-line {
+  height: 4px;
+  background-color: #e6e6f0;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
