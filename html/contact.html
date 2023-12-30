@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team</title>
-    <link rel="stylesheet" href="./fonts/fontsheet.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../fonts/fontsheet.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
       <div class="container header">
         <div class="item-1">
           <a href="#">
-            <img class="logo" src="./img/header/Logo.png" alt="Logo" />
+            <img class="logo" src="../img/header/Logo.png" alt="Logo" />
           </a>
           <svg
             class="slesh"
@@ -130,10 +130,12 @@
           <ul class="item-3">
             <li><a class="menu-item" href="#">about us</a></li>
             <li><a class="menu-item" href="#">services</a></li>
-            <li><a class="menu-item Current-page active" href="#">team</a></li>
+            <li>
+              <a class="menu-item" href="team.html">team</a>
+            </li>
             <li><a class="menu-item" href="#">publications</a></li>
             <li>
-              <a class="menu-item" href="./contact/contact.html">contact</a>
+              <a class="menu-item active Current-page" href="#">contact</a>
             </li>
           </ul>
         </nav>
@@ -141,174 +143,81 @@
     </header>
     <main>
       <div class="container-small">
-        <h1 class="main-title">
-          We are used to taking responsibility and always guarantee honest,
-          timely assistance, even in situations where most are powerless.
-        </h1>
-      </div>
-      <div class="container">
-        <div class="card-wrap">
-          <div class="relative card-item">
-            <img
-              class="team-foto"
-              src="./img/team-page/Team-1.jpg"
-              alt="Alexander Alexandrovsky"
-            />
-            <h2 class="card-name">Alexander Alexandrovsky</h2>
-            <p class="card-descript">Managing partner</p>
-            <a href="#">
-              <svg
-                class="card-absolute"
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="32"
-                viewBox="0 0 33 32"
-                fill="none"
-              >
-                <circle cx="16.6667" cy="16" r="16" fill="#F5F5FA" />
-                <path
-                  id="styled-element"
-                  d="M14.1667 23.5L21.1667 16.5L14.1667 9.5"
-                  stroke="#24A3FF"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
+        <div class="flex justify-between gap-60 contact-wrap">
+          <div class="contact-info">
+            <p class="contact-adress">
+              Kyiv, <br />
+              Mechnikova str, 14
+            </p>
+            <hr class="horizont-line" />
+            <a class="contact-tel" href="tel:+0800211927">0800 211 927</a>
+            <a class="contact-mail" href="mailto:contact@forstudy.space"
+              >contact@forstudy.space</a
+            >
+            <hr class="horizont-line" />
+            <div class="contact-social">
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_22724_6547)">
+                    <path
+                      d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                      fill="#24A3FF"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_22724_6547">
+                      <rect width="38" height="38" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <p class="contact-descript">Our page on facebook</p>
+            </div>
           </div>
-          <div class="relative card-item">
-            <img
-              class="team-foto"
-              src="./img/team-page/Team-2.jpg"
-              alt="Evgeny Patrikov"
-            />
-            <h2 class="card-name">Evgeny Patrikov</h2>
-            <p class="card-descript">Equity partner, Attorney-at-law</p>
-            <a href="#">
-              <svg
-                class="card-absolute"
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="32"
-                viewBox="0 0 33 32"
-                fill="none"
-              >
-                <circle cx="16.6667" cy="16" r="16" fill="#F5F5FA" />
-                <path
-                  id="styled-element"
-                  d="M14.1667 23.5L21.1667 16.5L14.1667 9.5"
-                  stroke="#24A3FF"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="relative card-item">
-            <img
-              class="team-foto"
-              src="./img/team-page/Team-3.jpg"
-              alt="Vladislav Melnik"
-            />
-            <h2 class="card-name">Vladislav Melnik</h2>
-            <p class="card-descript">Associate</p>
-            <a href="#">
-              <svg
-                class="card-absolute"
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="32"
-                viewBox="0 0 33 32"
-                fill="none"
-              >
-                <circle cx="16.6667" cy="16" r="16" fill="#F5F5FA" />
-                <path
-                  id="styled-element"
-                  d="M14.1667 23.5L21.1667 16.5L14.1667 9.5"
-                  stroke="#24A3FF"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="relative card-item">
-            <img
-              class="team-foto"
-              src="./img/team-page/Team-4.jpg"
-              alt="Sergey Binn"
-            />
-            <h2 class="card-name">Sergey Binn</h2>
-            <p class="card-descript">Associate</p>
-            <a href="#">
-              <svg
-                class="card-absolute"
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="32"
-                viewBox="0 0 33 32"
-                fill="none"
-              >
-                <circle cx="16.6667" cy="16" r="16" fill="#F5F5FA" />
-                <path
-                  id="styled-element"
-                  d="M14.1667 23.5L21.1667 16.5L14.1667 9.5"
-                  stroke="#24A3FF"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="relative card-item">
-            <img
-              class="team-foto"
-              src="./img/team-page/Team-5.jpg"
-              alt="Oksana Kobzar"
-            />
-            <h2 class="card-name">Oksana Kobzar</h2>
-            <p class="card-descript">Equity partner, Attorney-at-law</p>
-            <a href="#">
-              <svg
-                class="card-absolute"
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="32"
-                viewBox="0 0 33 32"
-                fill="none"
-              >
-                <circle cx="16.6667" cy="16" r="16" fill="#F5F5FA" />
-                <path
-                  id="styled-element"
-                  d="M14.1667 23.5L21.1667 16.5L14.1667 9.5"
-                  stroke="#24A3FF"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="relative card-item">
-            <img
-              class="team-foto"
-              src="./img/team-page/Team-6.jpg"
-              alt="Julia Wolk"
-            />
-            <h2 class="card-name">Julia Wolk</h2>
-            <p class="card-descript">Associate, Attorney-at-law</p>
-            <a href="#">
-              <svg
-                class="card-absolute"
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="32"
-                viewBox="0 0 33 32"
-                fill="none"
-              >
-                <circle cx="16.6667" cy="16" r="16" fill="#F5F5FA" />
-                <path
-                  id="styled-element"
-                  d="M14.1667 23.5L21.1667 16.5L14.1667 9.5"
-                  stroke="#24A3FF"
-                  stroke-width="2"
-                />
-              </svg>
-            </a>
+          <div class="contact-wrapper-form">
+            <form class="contact-inner-wrapper" action="#">
+              <h3 class="form-title">We would like to help you</h3>
+              <label for="name"></label>
+              <input
+                class="form-name"
+                id="name"
+                type="text"
+                placeholder="Name"
+              />
+              <br />
+              <label for="massage"></label>
+              <textarea
+                class="form-massage"
+                id="massage"
+                placeholder="Message"
+              ></textarea>
+
+              <h3 class="form-text">How to answer you?</h3>
+              <label for="phone"></label>
+              <input
+                class="form-phone"
+                type="number"
+                placeholder="Phone number"
+                id="phone"
+              />
+              <br />
+              <label for="mail"></label>
+              <input
+                class="form-mail"
+                type="email"
+                placeholder="Email"
+                name="mail"
+                id="mail"
+              />
+              <br />
+              <button class="form-btn" type="submit">Send message</button>
+            </form>
           </div>
         </div>
       </div>
@@ -364,7 +273,7 @@
       </div>
     </footer>
 
-    <script src="./js/jquery-3.7.1.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
