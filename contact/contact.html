@@ -131,10 +131,12 @@
             <li><a class="menu-item" href="#">about us</a></li>
             <li><a class="menu-item" href="#">services</a></li>
             <li>
-              <a class="menu-item Current-page" href="../index.html">team</a>
+              <a class="menu-item" href="../index.html">team</a>
             </li>
             <li><a class="menu-item" href="#">publications</a></li>
-            <li><a class="menu-item active" href="#">contact</a></li>
+            <li>
+              <a class="menu-item active Current-page" href="#">contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -149,36 +151,37 @@
             </p>
             <hr class="horizont-line" />
             <a class="contact-tel" href="tel:+0800211927">0800 211 927</a>
-            <a href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            <a class="contact-mail" href="mailto:contact@forstudy.space"
+              >contact@forstudy.space</a
+            >
             <hr class="horizont-line" />
-            <a
-              class="contact-mail"
-              href="https://www.facebook.com/"
-              target="_blank"
-              >Our page on facebook
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="38"
-                height="38"
-                viewBox="0 0 38 38"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_22724_6547)">
-                  <path
-                    d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
-                    fill="#24A3FF"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_22724_6547">
-                    <rect width="38" height="38" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
+            <div class="contact-social">
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_22724_6547)">
+                    <path
+                      d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                      fill="#24A3FF"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_22724_6547">
+                      <rect width="38" height="38" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <p class="contact-descript">Our page on facebook</p>
+            </div>
           </div>
-          <div class="contact__wrapper-form">
-            <form class="contact__inner-wrapper d-flex flex-column" action="#">
+          <div class="contact-wrapper-form">
+            <form class="contact-inner-wrapper" action="#">
               <h3 class="form-title">We would like to help you</h3>
               <label for="name"></label>
               <input
@@ -187,6 +190,7 @@
                 type="text"
                 placeholder="Name"
               />
+              <br />
               <label for="massage"></label>
               <textarea
                 class="form-massage"
@@ -202,6 +206,7 @@
                 placeholder="Phone number"
                 id="phone"
               />
+              <br />
               <label for="mail"></label>
               <input
                 class="form-mail"
@@ -210,7 +215,8 @@
                 name="mail"
                 id="mail"
               />
-              <button class="form-btn btn" type="submit">Send message</button>
+              <br />
+              <button class="form-btn" type="submit">Send message</button>
             </form>
           </div>
         </div>

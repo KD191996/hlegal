@@ -88,7 +88,7 @@ html {
     align-items: center;
   }
 }
-@media (min-width: 945px) {
+@media (min-width: 1150px) {
   .container-small {
     margin-left: calc(var(--basic-space) * 2);
     margin-right: calc(var(--basic-space) * 2);
@@ -96,8 +96,6 @@ html {
 }
 @media (min-width: 1700px) {
   .container-small {
-    padding-left: calc(var(--basic-space) * 2);
-    padding-right: calc(var(--basic-space) * 2);
     margin-left: auto;
     margin-right: auto;
   }
@@ -222,6 +220,7 @@ html {
   }
   .Current-page {
     color: $Accent;
+    border: none;
   }
   .close {
     display: inline-block !important;
