@@ -1,39 +1,3 @@
-$('.burger').click(function () {
-    $(this).toggleClass('active');
-    $('.nav-wrap').toggleClass('active');
-    $('.item-3').toggleClass('active');
-
-})
-$('.nav-wrap').click(function (event) {
-    console.log(event.target);
-    console.log(this);
-
-    if (event.target === this) {
-        $('.nav-wrap').removeClass('active')
-    }
-
-})
-$('.close').click(function () {
-    $('.nav-wrap').removeClass('active')
-})
-
-var solutionButton = document.querySelectorAll('.solution__box-subject-link');
-var solutionText = document.querySelectorAll('.solution__box-info');
-
-solutionButton.forEach((button, i) => {
-    button.addEventListener('click', () => {
-        solutionText.forEach((text, j) => {
-            if (i === j) {
-                solutionButton[j].classList.add('solution__box-subject-link--active')
-                solutionText[j].classList.add('solution__box-info--visible')
-            } else {
-                solutionButton[j].classList.remove('solution__box-subject-link--active')
-                solutionText[j].classList.remove('solution__box-info--visible')
-            }
-        })
-    })
-})
-
 var consistent = document.querySelector('.consistent');
 var consistent_text = document.querySelector('.consistent-text');
 var customer = document.querySelector('.customer');

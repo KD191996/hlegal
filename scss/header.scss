@@ -3,7 +3,7 @@
   @include font-styles(36px, 400, normal);
 }
 .header {
-  margin-top: 50px;
+  padding-top: 50px;
   display: grid;
   grid-template-areas:
     'a b'

@@ -1,0 +1,120 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url(/img/homepage/svg/Symbol.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+}
+.home {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.white {
+  color: #fff;
+}
+.home {
+  .tel {
+    color: #fff;
+  }
+  .adress {
+    color: #fff;
+  }
+  .facebook:hover svg path {
+    color: #f0145a;
+    transition: all 0.3s linear;
+  }
+  .menu-item {
+    color: #fff;
+  }
+  &-title {
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.bg-gradient {
+  background: $Gradient-Supersoft;
+  position: relative;
+  border-radius: 0 0 12px 12px;
+}
+.banner__scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.solution__box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+}
+.solution__box-subject {
+  display: flex;
+  margin: 0 60px 0 0;
+  padding-right: 60px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+  flex-direction: column;
+  overflow: inherit;
+  align-items: flex-end;
+  justify-content: space-around;
+  white-space: nowrap;
+  gap: 30px;
+}
+.solution__box-info-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.solution__box-info-text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.solution__box-info--visible {
+  display: block !important;
+}
+.solution__box-subject-link:not(:last-child) {
+  margin-right: 0;
+}
+.solution__box-subject-link:last-child {
+  margin-right: 0;
+}
+.solution__box-border {
+  display: none;
+}
+.solution__box-info {
+  margin: 10px 0;
+}
+.solution__box-subject-link {
+  list-style: none;
+  color: $Grey-Text;
+  @include font-styles(38px, 700, normal);
+  text-align: right;
+  cursor: pointer;
+}
+.solution__box-subject-link--active {
+  background: $Gradient-Text-Red-Reversed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.solution__box-subject-link:hover {
+  color: $Accent;
+  transition: 0.3s all linear;
+}
+.solution__box-info {
+  display: none;
+}
