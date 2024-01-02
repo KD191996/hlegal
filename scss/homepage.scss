@@ -43,6 +43,27 @@
   background: $Gradient-Supersoft;
   position: relative;
   border-radius: 0 0 12px 12px;
+  padding-bottom: 60px;
+}
+.services-wrap::after {
+  content: '';
+  background-color: #cacadb;
+  height: 10px;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+}
+.services-wrap::before {
+  content: '';
+  background-color: #e7e7f2;
+  height: 10px;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
 }
 .banner__scroll {
   position: absolute;
@@ -117,4 +138,76 @@
 }
 .solution__box-info {
   display: none;
+}
+//**************** SERVICES********************//
+.services {
+  &-svg {
+    border-radius: 24px;
+    background-color: #fff;
+    padding: 14px;
+  }
+  &-link {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+  }
+  &-title {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include font-styles(38px, 700, normal);
+  }
+}
+.services-link {
+  color: $Active-Regular;
+  @include font-styles(14px, 700, normal);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services-link:hover {
+  color: $Accent;
+  transition: 0.3s;
+}
+.services-link:hover svg path {
+  stroke: $Accent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: $Active-Regular;
+  @include font-styles(22px, 700, normal);
+}
+.card-text {
+  color: #fff;
+}
+.services-wrap {
+  margin-bottom: 0;
+}
+//******************** partners*************************
+.partners {
+  &-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  &-title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: $Main-Regular;
+    @include font-styles(14px, 700, normal);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+.partners-wrap a {
+  display: inline-flex;
+  height: 120px;
 }

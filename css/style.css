@@ -379,6 +379,29 @@
   background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   position: relative;
   border-radius: 0 0 12px 12px;
+  padding-bottom: 60px;
+}
+
+.services-wrap::after {
+  content: "";
+  background-color: #cacadb;
+  height: 10px;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+}
+
+.services-wrap::before {
+  content: "";
+  background-color: #e7e7f2;
+  height: 10px;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
 }
 
 .banner__scroll {
@@ -467,6 +490,89 @@
 
 .solution__box-info {
   display: none;
+}
+
+.services-svg {
+  border-radius: 24px;
+  background-color: #fff;
+  padding: 14px;
+}
+.services-link {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.services-title {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.services-link {
+  color: #24a3ff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.services-link:hover {
+  color: #f0145a;
+  transition: 0.3s;
+}
+
+.services-link:hover svg path {
+  stroke: #f0145a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #24a3ff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-text {
+  color: #fff;
+}
+
+.services-wrap {
+  margin-bottom: 0;
+}
+
+.partners-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.partners-title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: #323264;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.partners-wrap a {
+  display: inline-flex;
+  height: 120px;
 }
 
 :root {
