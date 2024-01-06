@@ -89,16 +89,6 @@ business.addEventListener('click', () => {
 
 
 
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 0,
-//     nav: true,
-//     responsive: {
-//         0: {
-//             items: 1
-//         }
-//     }
-// })
 
 var owl = $('.owl-carousel');
 owl.owlCarousel({
@@ -106,7 +96,7 @@ owl.owlCarousel({
     loop: true,
     margin: 0,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 100000,
     autoplayHoverPause: true
 });
 $('.play').on('click', function () {
