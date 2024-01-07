@@ -4,6 +4,8 @@
 @import 'footer';
 @import 'contact-page';
 @import 'homepage';
+@import 'services';
+
 :root {
   --container-width: 1600px;
   --basic-space: 60px;
@@ -117,6 +119,7 @@ html {
   }
   .card-wrap {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
   .main-title {
     font-size: 30px;

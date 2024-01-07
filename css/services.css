@@ -1,0 +1,23 @@
+.services-page {
+  padding-top: 177px;
+}
+
+.partners-servpage {
+  padding-top: 88px;
+}
+
+.span-logo-dark {
+  color: #fff;
+  font-size: 36px;
+}
+
+@media (max-width: 955px) {
+  .services-page {
+    padding-top: 267px;
+  }
+}
+@media (max-width: 680px) {
+  .services-page {
+    padding-top: 123px;
+  }
+}/*# sourceMappingURL=services.css.map */

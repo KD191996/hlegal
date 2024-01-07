@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/dist/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/dist/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="../fonts/fontsheet.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="home">
       <div class="container header">
         <div class="item-1">
           <a href="../index.html">
-            <img class="logo" src="../img/header/Logo.png" alt="Logo" />
+            <img class="logo" src="../img/homepage/svg/Logo.svg" alt="Logo" />
           </a>
           <svg
             class="slesh"
@@ -29,10 +34,10 @@
               fill="#F0145A"
             />
           </svg>
-          <span class="span-logo">contact</span>
+          <span class="span-logo-dark span-logo">services</span>
         </div>
-        <div class="item-2">
-          <div class="lang-list">
+        <div class="item-2 item-2-dark">
+          <div class="lang-list white">
             <form action="https://fom.in.ua/echo" method="post">
               <label>
                 <input
@@ -81,14 +86,14 @@
               viewBox="0 0 24 25"
               fill="none"
             >
-              <g clip-path="url(#clip0_22721_6715)">
+              <g clip-path="url(#clip0_126958_740)">
                 <path
                   d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                  fill="#B3B3BA"
+                  fill="white"
                 />
               </g>
               <defs>
-                <clipPath id="clip0_22721_6715">
+                <clipPath id="clip0_126958_740">
                   <rect
                     width="24"
                     height="24"
@@ -100,7 +105,7 @@
             </svg>
           </a>
         </div>
-        <button class="burger">
+        <button class="burger burger-dark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -129,98 +134,108 @@
           </button>
           <ul class="item-3">
             <li><a class="menu-item" href="#">about us</a></li>
-            <li><a class="menu-item" href="./services.html">services</a></li>
+            <li><a class="menu-item active" href="#">services</a></li>
             <li>
-              <a class="menu-item" href="team.html">team</a>
+              <a class="menu-item" href="./team.html">team</a>
             </li>
             <li><a class="menu-item" href="#">publications</a></li>
             <li>
-              <a class="menu-item active Current-page" href="#">contact</a>
+              <a class="menu-item" href="./contact.html">contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="container-small">
-        <div class="flex justify-between gap-60 contact-wrap">
-          <div class="contact-info">
-            <p class="contact-adress">
-              Kyiv, <br />
-              Mechnikova str, 14
+      <div class="bg-gradient">
+        <section class="services-entry-page">
+          <div class="container">
+            <img src="../img/homepage/services/Ecommerce.svg" alt="" />
+            <h2 class="services-title">IT and e-commerce</h2>
+            <p>
+              An endless stream of contracts, tax issues, labor relations,
+              corporate papers - legal work distracts you from doing business.
+              But there is not much work to do to hire an in-house lawyer.
+              <br />
+              In addition, over time, the work will become the same type and
+              uninteresting for a full-time lawyer. And we know very well how
+              difficult it is to find a good candidate with experience in the
+              field of information technology in Ukraine.
             </p>
-            <hr class="horizont-line" />
-            <a class="contact-tel" href="tel:+0800211927">0800 211 927</a>
-            <a class="contact-mail" href="mailto:contact@forstudy.space"
-              >contact@forstudy.space</a
+          </div>
+        </section>
+      </div>
+      <div class="bg-gradient-shadow"></div>
+      <section class="publications">
+        <div class="container">
+          <a href="#" class="publications-link"
+            >Publications<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
             >
-            <hr class="horizont-line" />
-            <div class="contact-social">
-              <a href="https://www.facebook.com/" target="_blank">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
-                  viewBox="0 0 38 38"
-                  fill="none"
+              <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+            </svg>
+          </a>
+          <h2 class="publications-title">We have something to tell</h2>
+          <div class="publications-wrap">
+            <div class="publications-card grid-item1">
+              <img
+                class="publications-foto"
+                src="../img/publications/Publication-1.jpg"
+                alt="Publication-1"
+              />
+              <div class="publications-item">
+                <a href="#" class="publications-headline">Equity associate</a>
+                <p class="publications-date">April 22</p>
+                <p class="publications-text">
+                  I'm a jun on projects. I am a co-owner of a law firm. How it
+                  happened. Before entering my parents told me that if I…
+                </p>
+              </div>
+            </div>
+            <div class="publications-card grid-item2">
+              <img
+                class="publications-foto"
+                src="../img/publications/Publication-2.jpg"
+                alt="Publication-2"
+              />
+              <div class="publications-item">
+                <a href="#" class="publications-headline">
+                  Penalty for the Good Corporation: what will happen to Google
+                  and others for violating the GDPR
+                </a>
+                <p class="publications-date">September 29</p>
+                <p class="publications-text">
+                  And why the recovery of 50 million euros could be a fateful
+                  precedent According to Mind.ua January 21 National Commission
+                  for Data Protection.
+                </p>
+              </div>
+            </div>
+            <div class="publications-card grid-item3">
+              <img
+                class="publications-foto"
+                src="../img/publications/Publication-3.jpg"
+                alt="Publication-3"
+              />
+              <div class="publications-item">
+                <a href="#" class="publications-headline"
+                  >Millennial Testament</a
                 >
-                  <g clip-path="url(#clip0_22724_6547)">
-                    <path
-                      d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
-                      fill="#24A3FF"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_22724_6547">
-                      <rect width="38" height="38" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-              <p class="contact-descript">Our page on facebook</p>
+                <p class="publications-date">August 19</p>
+                <p class="publications-text">
+                  What and how modern vloggers, opinion leaders and
+                  crypto-millionaires will inherit A typical legacy of the
+                  Ukrainian generation X looks like this: an apartment in…
+                </p>
+              </div>
             </div>
           </div>
-          <div class="contact-wrapper-form">
-            <form class="contact-inner-wrapper" action="#">
-              <h3 class="form-title">We would like to help you</h3>
-              <label for="name"></label>
-              <input
-                class="form-name"
-                id="name"
-                type="text"
-                placeholder="Name"
-              />
-              <br />
-              <label for="massage"></label>
-              <textarea
-                class="form-massage"
-                id="massage"
-                placeholder="Message"
-              ></textarea>
-
-              <h3 class="form-text">How to answer you?</h3>
-              <label for="phone"></label>
-              <input
-                class="form-phone"
-                type="number"
-                placeholder="Phone number"
-                id="phone"
-              />
-              <br />
-              <label for="mail"></label>
-              <input
-                class="form-mail"
-                type="email"
-                placeholder="Email"
-                name="mail"
-                id="mail"
-              />
-              <br />
-              <button class="form-btn" type="submit">Send message</button>
-            </form>
-          </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container flex justify-between footer-wrap">
@@ -274,6 +289,7 @@
     </footer>
 
     <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../assets/dist/owl.carousel.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
