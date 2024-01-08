@@ -195,6 +195,10 @@
   margin-bottom: 15px;
   color: $Active-Regular;
   @include font-styles(22px, 700, normal);
+  transition: 0.3s all linear;
+}
+.card-title:hover {
+  color: $Accent;
 }
 .card-text {
   color: #fff;

@@ -1,0 +1,18 @@
+.news-wrap {
+  margin: 0 auto 30px auto;
+  text-align: center;
+  border-radius: 12px;
+  background: var(--Grey-Separator, #e6e6f0);
+  padding: 2px;
+  max-width: 233px;
+  width: 100%;
+}
+
+.news-item-1 {
+  padding: 8px 30px 10px 30px;
+  border-radius: 10px;
+  background: #fff;
+}
+.news-item-2 {
+  padding: 8px 30px 10px 30px;
+}/*# sourceMappingURL=publication.css.map */

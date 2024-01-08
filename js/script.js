@@ -17,6 +17,24 @@ $('.close').click(function () {
     $('.nav-wrap').removeClass('active')
 })
 
+$('.target').click(function () {
+    $('.modal-wrapper').toggleClass('active-modal');
+})
+
+$('.modal-wrapper').click(function (event) {
+    console.log(event.target);
+    console.log(this);
+
+    if (event.target === this) {
+        $('.modal-wrapper').removeClass('active-modal')
+    }
+
+})
+
+$('.close-modal').click(function () {
+    $('.modal-wrapper').removeClass('active-modal')
+})
+
 var solutionButton = document.querySelectorAll('.solution__box-subject-link');
 var solutionText = document.querySelectorAll('.solution__box-info');
 

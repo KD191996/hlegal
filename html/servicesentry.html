@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>IT and e-commerce</title>
     <link rel="stylesheet" href="../assets/dist/assets/owl.carousel.min.css" />
     <link
       rel="stylesheet"
@@ -134,7 +134,9 @@
           </button>
           <ul class="item-3">
             <li><a class="menu-item" href="#">about us</a></li>
-            <li><a class="menu-item active" href="#">services</a></li>
+            <li>
+              <a class="menu-item active" href="services.html">services</a>
+            </li>
             <li>
               <a class="menu-item" href="./team.html">team</a>
             </li>
@@ -149,24 +151,73 @@
     <main>
       <div class="bg-gradient">
         <section class="services-entry-page">
-          <div class="container">
-            <img src="../img/homepage/services/Ecommerce.svg" alt="" />
-            <h2 class="services-title">IT and e-commerce</h2>
-            <p>
-              An endless stream of contracts, tax issues, labor relations,
-              corporate papers - legal work distracts you from doing business.
-              But there is not much work to do to hire an in-house lawyer.
-              <br />
-              In addition, over time, the work will become the same type and
-              uninteresting for a full-time lawyer. And we know very well how
-              difficult it is to find a good candidate with experience in the
-              field of information technology in Ukraine.
-            </p>
+          <div class="container-small">
+            <div class="text-center services-entry-up">
+              <img
+                class="services-svg mb-28"
+                src="../img/homepage/services/Ecommerce.svg"
+                alt=""
+              />
+              <h2 class="services-entry-title">IT and e-commerce</h2>
+              <p class="services-entry-text mb-28">
+                An endless stream of contracts, tax issues, labor relations,
+                corporate papers - legal work distracts you from doing business.
+                But there is not much work to do to hire an in-house lawyer.
+                <br />
+                <br />
+                In addition, over time, the work will become the same type and
+                uninteresting for a full-time lawyer. And we know very well how
+                difficult it is to find a good candidate with experience in the
+                field of information technology in Ukraine.
+              </p>
+              <button class="services-entry-btn target">
+                Free consultation
+              </button>
+            </div>
+
+            <div class="services-entry-down">
+              <h3 class="list-title">Services in this area:</h3>
+              <ul class="list">
+                <li>
+                  support of investment projects for the development of port
+                  infrastructure;
+                </li>
+                <li>
+                  certification of GTS, entering information about them in
+                  mandatory databases and registers;
+                </li>
+                <li>
+                  registration of permits for the construction of port
+                  terminals;
+                </li>
+                <li>
+                  registration of permit and other mandatory documentation
+                  required for carrying out activities in the port (emission
+                  permit, conclusion on EIA, RTC, etc.);
+                </li>
+                <li>
+                  support of procedures related to the lease of state property
+                  in the port;
+                </li>
+                <li>
+                  support of procedures related to confirmation of the status of
+                  port operator, maritime agent, foreign sailing line;
+                </li>
+                <li>
+                  support of procedures related to the inclusion of the company
+                  within the port;
+                </li>
+                <li>
+                  appeals against actions related to the illegal imposition of
+                  services in the port by monopoly companies.
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>
-      <div class="bg-gradient-shadow"></div>
-      <section class="publications">
+
+      <section class="publications mt-60">
         <div class="container">
           <a href="#" class="publications-link"
             >Publications<svg
@@ -287,6 +338,55 @@
         <p class="copy">© 2021 HLEGAL Law company, LLC</p>
       </div>
     </footer>
+    <div class="modal-wrapper">
+      <div class="modal-wrapper-form">
+        <form class="modal-inner-wrapper" action="#">
+          <h3 class="form-title">We would like to help you</h3>
+          <svg
+            class="close-modal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <rect width="32" height="32" rx="8" fill="#E6E6F0" />
+            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+          </svg>
+
+          <label for="name"></label>
+          <input class="form-name" id="name" type="text" placeholder="Name" />
+          <br />
+          <label for="massage"></label>
+          <textarea
+            class="form-massage"
+            id="massage"
+            placeholder="Message"
+          ></textarea>
+
+          <h3 class="form-text">How to answer you?</h3>
+          <label for="phone"></label>
+          <input
+            class="form-phone"
+            type="number"
+            placeholder="Phone number"
+            id="phone"
+          />
+          <br />
+          <label for="mail"></label>
+          <input
+            class="form-mail"
+            type="email"
+            placeholder="Email"
+            name="mail"
+            id="mail"
+          />
+          <br />
+          <button class="form-btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </div>
 
     <script src="../js/jquery-3.7.1.js"></script>
     <script src="../assets/dist/owl.carousel.min.js"></script>
