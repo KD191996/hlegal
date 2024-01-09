@@ -1152,9 +1152,121 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.publications-entry-card {
+  padding-top: 60px;
+}
+.publications-entry-foto {
+  border-radius: 12px;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.publications-entry-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.publications-entry-headline, .publications-entry-decision {
+  color: #323264;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.publications-entry-gradient {
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: normal;
+}
+.publications-entry-requirement {
+  color: #46466e;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+}
+.publications-entry-list {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-left: 35px;
+}
+.publications-entry-date {
+  color: #b3b3ba;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.publications-entry-img {
+  text-align: center;
+  font-size: 14px;
+  color: #b3b3ba;
+}
+.publications-entry-decision {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.publications-entry-social {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.publications-entry-date::after {
+  content: " ";
+  height: 4px;
+  background-color: #e6e6f0;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.publications-list-item {
+  margin-bottom: 15px;
+}
+
+.publications-entry-list li::marker {
+  color: #f0145a;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.publications-entry-item::after {
+  content: " ";
+  height: 4px;
+  background-color: #e6e6f0;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.publications-entry-social a {
+  padding: 9px;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  display: flex;
+}
+
+.publications-entry-social a:hover {
+  background-color: #ededf7;
+  transition: 0.3s all linear;
+}
+
 :root {
   --container-width: 1600px;
   --basic-space: 60px;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 * {
