@@ -5,9 +5,11 @@
 .header {
   padding-top: 50px;
   display: grid;
+  gap: 16px;
   grid-template-areas:
     'a b'
     'a c';
+
   .item-1 {
     grid-area: a;
     align-self: center;
