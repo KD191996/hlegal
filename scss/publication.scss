@@ -46,6 +46,9 @@
   .publications-page-wrap {
     grid-template-columns: repeat(1, 1fr);
   }
+  .publications {
+    margin-top: 0;
+  }
 }
 
 // *******************publications-entry*******************

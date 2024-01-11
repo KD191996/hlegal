@@ -125,6 +125,7 @@
   font-weight: 700;
   line-height: normal;
   margin-top: 15px;
+  font-size: 16px;
 }
 .card-descript {
   color: #b3b3ba;
@@ -148,7 +149,7 @@
   position: relative;
 }
 
-.card-item:hover h2 {
+.card-item:hover a {
   color: #f0145a;
   cursor: pointer;
 }
@@ -220,6 +221,9 @@
     margin-bottom: 30px !important;
     grid-template-columns: repeat(1, 1fr) !important;
   }
+  .team-entry-pic {
+    margin-right: 0 !important;
+  }
   .team-entry-foto {
     height: 375px;
     width: 100%;
@@ -262,7 +266,7 @@
     grid-area: c;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 956px) {
   .team-entry {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
@@ -289,7 +293,7 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1149px) {
   .team-entry {
     grid-template-columns: none;
     grid-template-rows: none;
@@ -1298,6 +1302,9 @@
   .publications-page-wrap {
     grid-template-columns: repeat(1, 1fr);
   }
+  .publications {
+    margin-top: 0;
+  }
 }
 .publications-entry-card {
   padding-top: 60px;
@@ -1405,6 +1412,180 @@
   transition: 0.3s all linear;
 }
 
+.turn-section {
+  padding-top: 60px;
+}
+
+.turn-box-descript {
+  flex: 1 1 100%;
+}
+.turn-box-descript-title {
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+.turn-box-descript-text {
+  font-size: 19px;
+}
+
+.turn-box {
+  display: flex;
+  gap: 30px;
+}
+
+.turn-box-wrap-number {
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.wrap-number {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.turn-box-wrap-statistics:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.turn-box-wrap {
+  border-left: 4px solid #e6e6f0;
+  padding-left: 30px;
+}
+
+.team-pic {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.team-pic-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: 63px;
+  text-transform: uppercase;
+  line-height: normal;
+  transform: translate(-50%, -50%);
+}
+
+.quality-box {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr;
+  grid-column-gap: 60px;
+}
+.quality-box-text {
+  font-size: 19px;
+}
+.quality-box-title {
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+  width: 362px;
+}
+
+.quality {
+  padding-bottom: 60px;
+}
+
+.achievements {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f5f5fa;
+}
+.achievements-title {
+  color: #323264;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.achievements-wrap {
+  display: flex;
+  align-items: center;
+}
+.achievements-item {
+  padding: 25px;
+  background-color: #fff;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.achievements-img {
+  width: auto !important;
+  height: 60px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.owl-theme .owl-nav {
+  display: none;
+}
+
+@media (max-width: 955px) {
+  .achievements-item {
+    height: 90px;
+  }
+  .owl-carousel .owl-item .achievements-img {
+    height: 40px;
+  }
+  .turn-box {
+    flex-wrap: wrap;
+  }
+  .quality-box {
+    grid-template-columns: repeat(1, auto);
+  }
+  .quality-box-text {
+    margin-bottom: 30px;
+  }
+  .quality-box-title {
+    width: auto;
+  }
+}
+@media (max-width: 680px) {
+  .turn-box-descript-title {
+    font-size: 30px;
+  }
+  .team-pic-text {
+    font-size: 36px;
+    letter-spacing: 13px;
+  }
+  .quality-box-title {
+    font-size: 30px;
+  }
+  .turn-section {
+    padding-top: 30px;
+  }
+  .achievements .owl-theme .owl-dots {
+    max-width: 307px;
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+  }
+}
 :root {
   --container-width: 1600px;
   --basic-space: 60px;

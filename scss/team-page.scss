@@ -19,6 +19,7 @@
     font-weight: 700;
     line-height: normal;
     margin-top: 15px;
+    font-size: 16px;
   }
 
   &-descript {
@@ -42,7 +43,7 @@
   position: relative;
 }
 
-.card-item:hover h2 {
+.card-item:hover a {
   color: #f0145a;
   cursor: pointer;
 }
@@ -113,6 +114,9 @@
     margin-bottom: 30px !important;
     grid-template-columns: repeat(1, 1fr) !important;
   }
+  .team-entry-pic {
+    margin-right: 0 !important;
+  }
   .team-entry-foto {
     height: 375px;
     width: 100%;
@@ -157,7 +161,7 @@
     grid-area: c;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 956px) {
   .team-entry {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
@@ -184,7 +188,7 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1149px) {
   .team-entry {
     grid-template-columns: none;
     grid-template-rows: none;

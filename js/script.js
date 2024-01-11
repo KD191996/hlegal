@@ -17,6 +17,8 @@ $('.close').click(function () {
     $('.nav-wrap').removeClass('active')
 })
 
+//*************  modal - wrap**********/
+
 $('.target').click(function () {
     $('.modal-wrapper').toggleClass('active-modal');
 })
@@ -35,6 +37,7 @@ $('.close-modal').click(function () {
     $('.modal-wrapper').removeClass('active-modal')
 })
 
+//************************solution menu */ 
 var solutionButton = document.querySelectorAll('.solution__box-subject-link');
 var solutionText = document.querySelectorAll('.solution__box-info');
 
@@ -106,7 +109,7 @@ business.addEventListener('click', () => {
 });
 
 
-
+// **********************team - slider*****************
 
 var owl = $('.owl-carousel');
 owl.owlCarousel({
@@ -114,7 +117,7 @@ owl.owlCarousel({
     loop: true,
     margin: 0,
     autoplay: true,
-    autoplayTimeout: 100000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true
 });
 $('.play').on('click', function () {
@@ -123,3 +126,6 @@ $('.play').on('click', function () {
 $('.stop').on('click', function () {
     owl.trigger('stop.owl.autoplay')
 })
+
+// *********************achievements - slider***********
+
