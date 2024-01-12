@@ -18,7 +18,9 @@
     padding-top: 123px;
   }
 }
-
+.publications-60 {
+  margin-top: 60px;
+}
 // **************SERVICES-ENRTY-PAGE**************
 .services-entry {
   &-page {
@@ -144,5 +146,8 @@
   }
   .list {
     columns: 1;
+  }
+  .publications-60 {
+    margin-top: 60px !important;
   }
 }

@@ -158,3 +158,27 @@
   background-color: #ededf7;
   transition: 0.3s all linear;
 }
+@media (max-width: 680px) {
+  .publications-entry-foto {
+    height: 300px;
+    object-fit: cover;
+  }
+  .publications-entry-card {
+    padding-top: 30px;
+  }
+  .publications-entry-headline {
+    font-size: 20px;
+  }
+  .publications-entry-gradient {
+    font-size: 30px;
+  }
+  .publications-entry-requirement {
+    font-size: 16px;
+  }
+  .publications-entry-decision {
+    font-size: 16px;
+  }
+  .publications-title {
+    font-size: 30px;
+  }
+}
