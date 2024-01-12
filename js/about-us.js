@@ -1,19 +1,3 @@
-// $('.achievements-wrap').owlCarousel({
-//     loop: true,
-//     margin: 40,
-//     nav: true,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         500: {
-//             items: 2
-//         },
-//         1000: {
-//             items: 4
-//         }
-//     }
-// })
 
 $('.achievements-wrap').owlCarousel({
     loop: true,
@@ -36,23 +20,3 @@ $('.achievements-wrap').owlCarousel({
     }
 })
 
-// responsive: {
-//     // breakpoint from 0 up
-//     0 : {
-//         option1: value,
-//             option2 : value,
-//         ...
-//     },
-//     // breakpoint from 480 up
-//     480 : {
-//         option1: value,
-//             option2 : value,
-//         ...
-//     },
-//     // breakpoint from 768 up
-//     768 : {
-//         option1: value,
-//             option2 : value,
-//         ...
-//     }
-// }
